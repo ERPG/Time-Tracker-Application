@@ -62,7 +62,6 @@ function chronoStart(){
 			async: false
         })
 			.done(function(data){
-				console.log(data)
 				$("input[name*='taskHidden']").val(data)
 			})
 
@@ -106,7 +105,6 @@ function chronoStop(){
 			async: false
         })
 		.done(function(data){
-			console.log(' DONE SECOND CALL')
 		})
         $("#chronotime").text("0:00:00:00")
 		})
