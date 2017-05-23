@@ -1,0 +1,113 @@
+body {
+  background-image: url(../../assets/img/concrete_seamless.png); }
+
+h1 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 3em;
+  margin-bottom: 30px; }
+
+.chronotime {
+  font-size: 100px;
+  margin: 0 auto; }
+
+#inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; }
+
+.form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; }
+  .form label {
+    font-family: monospace;
+    font-size: 2em; }
+  .form .inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .form input#inputTask {
+    margin-bottom: 10px;
+    height: 25px;
+    border-radius: 5px;
+    width: 300px; }
+  .form [type~="button"] {
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0 9px #999; }
+  .form [type~="button"]:hover {
+    background-color: linen; }
+  .form [type~="button"]:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px); }
+  .form input.stop {
+    background-color: lightblue;
+    border-radius: 5px; }
+  .form input.start {
+    background-color: lightcoral;
+    border-radius: 5px; }
+  .form input.reset {
+    border-radius: 5px;
+    background-color: white; }
+
+div.clock {
+  text-align: center;
+  font-size: 3em;
+  border: 1px solid black;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Plaster', cursive; }
+
+.tableContainer {
+  text-align: center; }
+  .tableContainer .table {
+    margin: 0 auto;
+    width: 40%;
+    border: 1px solid black;
+    margin-top: 20px; }
+    .tableContainer .table thead {
+      background-color: lightgrey; }
+    .tableContainer .table tr.Trow {
+      background-color: black;
+      color: white; }
+
+@media screen and (max-width: 482px) {
+  input.start {
+    margin-right: 10px; }
+
+  div.clock {
+    width: 80%;
+    font-size: 2em; }
+
+  .form {
+    width: 100%; }
+
+  .table {
+    width: 100%; } }
+@media (min-width: 482px) and (max-width: 768px) {
+  div.clock {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 2em; }
+
+  input#inputTask {
+    width: 100px;
+    margin: 0; }
+
+  .table {
+    width: 100%; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  div.clock {
+    width: 50%;
+    font-size: 3em; } }
+
+/*# sourceMappingURL=style.css.map */
